@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drivingsafe"
+    android:orientation="vertical"
+    tools:context="com.example.android.safedrivingquiz.MainActivity">
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="1. What is always #1?"
+            android:textColor="#5e0935"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/question1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:text="Safety"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignLeft="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton"
+            android:layout_below="@+id/radioButton"
+            android:text="Quality"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignLeft="@+id/radioButton2"
+            android:layout_alignStart="@+id/radioButton2"
+            android:layout_below="@+id/radioButton2"
+            android:text="Customer Service"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_alignLeft="@+id/radioButton3"
+            android:layout_alignStart="@+id/radioButton3"
+            android:layout_below="@+id/radioButton3"
+            android:text="Metrics"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton4"
+            android:layout_marginTop="30dp"
+            android:textColor="#5e0935"
+            android:text="2. Safety starts with?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignRight="@+id/button5"
+            android:layout_alignStart="@+id/button4"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Your Supervisor"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignStart="@+id/button4"
+            android:layout_below="@+id/button"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Me"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignRight="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:layout_below="@+id/button3"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Your Family"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton4"
+            android:layout_alignStart="@+id/radioButton4"
+            android:layout_below="@+id/button4"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Your Safety Coordinator"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="3. Why should you plan your route? *Check all that applies*"
+            android:textSize="20sp"
+            android:textColor="#5e0935"
+            android:textStyle="bold"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Avoid Accidents"
+            />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Avoid Construction"
+            />
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Avoid Right Turns"
+            />
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textSize="20sp"
+            android:text="Avoid Left Turns"
+            />
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="4. What is the last thing you should do before you put your vehicle in drive?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#5e0935"
+            />
+        <EditText
+            android:id="@+id/message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ANSWER"
+            android:inputType=
+                "textCapSentences|textAutoCorrect"
+             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMBIT"
+            android:onClick="submitScore"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
